@@ -1,3 +1,49 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": [
+      "es6"
+    ],
+    "allowJs": true,
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "moduleResolution": "Node16",
+    "module": "Node16",
+    "resolveJsonModule": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "types": [
+      "jest"
+    ],
+    "typeRoots": [
+      "./@types",
+      "./node_modules/@types"
+    ],
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@app/api": ["src/api/index.ts"],
+      "@app/assets/icons": ["src/assets/icons/index.ts"],
+      "@app/assets/images/": ["src/assets/images/*"],
+      "@app/components": ["src/components/index.ts"],
+      "@app/hooks": ["src/hooks/index.ts"],
+      "@app/themes": ["src/themes/index.ts"],
+      "@app/screens": ["src/screens/index.ts"],
+      "@app/routes": ["src/routes/index.ts"],
+      "@app/providers": ["src/providers/index.ts"],
+      "@app/types": ["src/types/index.ts"],
+      "@app/utils": ["src/utils/index.ts"],
+      "@app/storybook": ["storybook/index.ts"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
 }
