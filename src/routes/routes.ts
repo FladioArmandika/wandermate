@@ -1,6 +1,4 @@
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
-
-import {ProgramClass, WorkoutProgram} from '@app/types';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export enum Screens {
   Welcome = 'WelcomeScreen',
@@ -9,13 +7,11 @@ export enum Screens {
 
   HomeTab = 'HomeTab',
   Home = 'HomeScreen',
-  Workout = 'WorkoutScreen',
-  Explore = 'ExploreScreen',
+  Plan = 'PlanScreen',
   Profile = 'ProfileScreen',
 
-  CheckIn = 'CheckInScreen',
-  QuickPreviewClass = 'QuickPreviewClassScreen',
-  WorkoutDetail = 'WorkoutDetailScreen',
+  CreatePlan = 'CreatePlanScreen',
+  PlanInviteFriends = 'PlanInviteFriendsScreen',
 }
 
 export type RootStackParams = {
@@ -23,12 +19,9 @@ export type RootStackParams = {
   LoginScreen: undefined;
   HomeTab: undefined;
   CheckInScreen: undefined;
-  WorkoutDetailScreen: {
-    workoutProgram: WorkoutProgram;
-  };
-  QuickPreviewClassScreen: {
-    programClass: ProgramClass;
-  };
+
+  CreatePlanScreen: undefined;
+  PlanInviteFriendsScreen: undefined;
 };
 
 export type HomeTabParams = {
