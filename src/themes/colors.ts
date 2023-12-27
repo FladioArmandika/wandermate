@@ -2,7 +2,7 @@ export const colors = {
   white: '#FFFFFF',
   black: '#111111',
   transparent: 'transparent',
-  primary: '#B0EB5F',
+  primary: '#FA5525',
 
   success: '#0a9c55',
   warningNormal: '#ba2626',

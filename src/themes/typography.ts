@@ -6,7 +6,7 @@ type TypographyTheme = {
   [variant: string]: TextStyle;
 };
 
-const font = {
+export const font = {
   base: { fontFamily: 'CeraPro-Regular' },
 };
 
