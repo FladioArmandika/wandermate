@@ -31,6 +31,7 @@
       "@app/api": ["src/api/index.ts"],
       "@app/assets/icons": ["src/assets/icons/index.ts"],
       "@app/assets/images/": ["src/assets/images/*"],
+      "@app/components/base": ["src/components/base/index.ts"],
       "@app/components": ["src/components/index.ts"],
       "@app/hooks": ["src/hooks/index.ts"],
       "@app/themes": ["src/themes/index.ts"],
